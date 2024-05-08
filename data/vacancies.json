@@ -10,12 +10,12 @@
         "currency": "RUR"
     },
     {
-        "name": "Python Developer",
-        "company_name": "Ошка",
+        "name": "Разработчик Python / Django",
+        "company_name": "AlfaBit",
         "area": "Москва",
-        "url": "https://hh.ru/vacancy/97992688",
-        "snippet_req": "Опыт написания кода на Django (+ DRF) от 2х лет. Понимание способов оптимизации SQL запросов к БД. ",
-        "salary_from": 120000,
+        "url": "https://hh.ru/vacancy/98318544",
+        "snippet_req": "Отличное знание <highlighttext>Python</highlighttext>, Django, Celery, PostgreSQL, Redis, ClickHouse (желателен опыт работы от 2-х лет). Опыт написания unit-тестов. ",
+        "salary_from": 100000,
         "salary_to": 150000,
         "currency": "RUR"
     }
