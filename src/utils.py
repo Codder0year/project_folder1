@@ -11,7 +11,7 @@ def get_vacancies_by_salary(filtered_vacancies, min_salary):
     return filtered_vacancies_twoo
 def sort_vacancies(filtered_vacancies):
     # Сортируем отфильтрованные вакансии по минимальной зарплате (от большей к меньшей)
-    sorted_vacancies = sorted(filtered_vacancies, key=lambda x: x.salary_from, reverse=True)
+    sorted_vacancies = sorted(filtered_vacancies, key=lambda x: (x.salary_from if x.salary_from is not None else -1), reverse=True)
     return sorted_vacancies
 
 def get_top_vacancies(filtered_vacancies, top_n):
