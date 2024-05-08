@@ -30,7 +30,7 @@ class Vacancy:
             name = vacancy_data.get('name', 'Не указано')
             area = vacancy_data.get('area', {}).get('name', 'Не указано')
             company = vacancy_data.get('employer', {}).get('name', 'Не указано')
-            url = vacancy_data.get('url', 'Ссылка не доступна')
+            url = vacancy_data.get('alternate_url', 'Ссылка не доступна')
             snippet_req = vacancy_data.get('snippet', {}).get('requirement', 'Описание не доступно')
             salary_data = vacancy_data.get('salary')
 
