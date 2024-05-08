@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Python-разработчик",
+        "company_name": "Ритейл-Процессинг",
+        "area": "Москва",
+        "url": "https://api.hh.ru/vacancies/98490852?host=hh.ru",
+        "snippet_req": "Хорошее знание <highlighttext>Python</highlighttext>, опыт промышленной разработки от 2 года. Опыт использования одного фреймворков - Django, Flask, FastAPI. Опыт асинхронной разработки, использования...",
+        "salary_from": 200000,
+        "salary_to": 220000,
+        "currency": "RUR"
+    },
+    {
+        "name": "Python Developer",
+        "company_name": "Ошка",
+        "area": "Москва",
+        "url": "https://api.hh.ru/vacancies/97992688?host=hh.ru",
+        "snippet_req": "Опыт написания кода на Django (+ DRF) от 2х лет. Понимание способов оптимизации SQL запросов к БД. ",
+        "salary_from": 120000,
+        "salary_to": 150000,
+        "currency": "RUR"
+    }
+]
