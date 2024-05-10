@@ -1,3 +1,4 @@
+
 class Vacancy:
     def __init__(self, name, company_name, area, url, snippet_req, salary_from, salary_to, currency):
         self.name = name
@@ -16,6 +17,42 @@ class Vacancy:
                 f'\nСсылка: {self.url}'
                 f'\nЗарплата: {self.salary_from}-{self.salary_to} {self.currency}'
                 f'\nОписание: {self.snippet_req}')
+
+    def __eq__(self, other):
+        if not isinstance(other, Vacancy):
+            return False
+        return (self.name == other.name and
+                self.company_name == other.company_name and
+                self.area == other.area and
+                self.url == other.url and
+                self.snippet_req == other.snippet_req and
+                self.salary_from == other.salary_from and
+                self.salary_to == other.salary_to and
+                self.currency == other.currency)
+
+    def __ne__(self, other):
+        return not self.__eq__(other)
+
+    def __lt__(self, other):
+        if not isinstance(other, Vacancy):
+            raise ValueError("не является классом Vacancy")
+        return self.salary_from < other.salary_from
+
+    def __le__(self, other):
+        if not isinstance(other, Vacancy):
+            raise ValueError("не является классом Vacancy")
+        return self.salary_from <= other.salary_from
+
+    def __gt__(self, other):
+        if not isinstance(other, Vacancy):
+            raise ValueError("не является классом Vacancy")
+        return self.salary_from > other.salary_from
+
+    def __ge__(self, other):
+        if not isinstance(other, Vacancy):
+            raise ValueError("Cannot compare Vacancy with non-Vacancy object.")
+        return self.salary_from >= other.salary_from
+
 
     @staticmethod
     def cast_to_object_list(hh_vacancies):

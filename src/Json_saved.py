@@ -1,9 +1,24 @@
 import json
 from src.vacancy import Vacancy
+from abc import ABC, abstractmethod
 
 
-class JSONSaver:
+class AbstractJsonSave(ABC):
+    def __init__(self):
+        pass
+
+    @abstractmethod
+    def save_to_file(self):
+        pass
+
+    @abstractmethod
+    def load_from_file(self):
+        pass
+
+
+class JSONSaver(AbstractJsonSave):
     def __init__(self, file_path):
+        super().__init__()
         self.filename = file_path
 
     def save_to_file(self, vacancies):

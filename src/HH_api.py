@@ -1,7 +1,19 @@
 import requests
+from abc import ABC, abstractmethod
 
-class HeadHunterAPI:
+
+class AbstractAPI(ABC):
     def __init__(self):
+        pass
+
+    @abstractmethod
+    def get_vacancies(self, keyword):
+        pass
+
+
+class HeadHunterAPI(AbstractAPI):
+    def __init__(self):
+        super().__init__()
         self.url = 'https://api.hh.ru/vacancies'
         self.headers = {'User-Agent': 'HH-User-Agent'}
         self.params = {'text': '', 'page': 0, 'per_page': 100}
