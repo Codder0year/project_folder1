@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Python-разработчик",
+        "company_name": "Ритейл-Процессинг",
+        "area": "Москва",
+        "url": "https://hh.ru/vacancy/98490852",
+        "snippet_req": "Хорошее знание <highlighttext>Python</highlighttext>, опыт промышленной разработки от 2 года. Опыт использования одного фреймворков - Django, Flask, FastAPI. Опыт асинхронной разработки, использования...",
+        "salary_from": 200000,
+        "salary_to": 220000,
+        "currency": "RUR"
+    },
+    {
+        "name": "Разработчик Python / Django",
+        "company_name": "AlfaBit",
+        "area": "Москва",
+        "url": "https://hh.ru/vacancy/98318544",
+        "snippet_req": "Отличное знание <highlighttext>Python</highlighttext>, Django, Celery, PostgreSQL, Redis, ClickHouse (желателен опыт работы от 2-х лет). Опыт написания unit-тестов. ",
+        "salary_from": 100000,
+        "salary_to": 150000,
+        "currency": "RUR"
+    }
+]
